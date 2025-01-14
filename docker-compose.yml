@@ -9,4 +9,5 @@ services:
       - "3000:3000"         # Expose port 3000 on your local machine and map it to the container's port 3000
     volumes:
       - .:/app              # Mount the current directory (where the code is) to the /app directory inside the container
+      - /app/node_modules # Prevents overwriting node_modules
     restart: always         # Ensure the container restarts automatically if it crashes
