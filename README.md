@@ -25,15 +25,22 @@ Click the image below to watch the demo video:
 
 ---
 
-## **Getting Started**  
-Follow these steps to set up and run the project locally.  
+## ** "We have stopped our EC2 service because it is a free-tier account, so the site is currently not visible. However, we can start it anytime if needed. Proof of EC2 instance status is attached." **
 
-### **Prerequisites**  
-- Docker installed on your machine.  
-- Node.js and npm installed.  
-- AWS EC2 instance (optional, for deployment).  
+# Run Locally
 
-### **1. Clone the Repository**  
-```bash
-git clone https://github.com/aditya-sadavare/projectdryrun.git
-cd projectdryrun
+## 1. Install Docker
+- Download and install [Docker](https://www.docker.com/get-started).
+- Verify installation:
+  ```sh
+  docker --version
+## 2. Set Up Your Jenkins Pipeline
+
+1. Create a New Pipeline
+In Jenkins, click on New Item, enter a name, select Pipeline, and click OK.
+
+2. Configure Pipeline:
+1)Scroll to the Pipeline section.
+2)Set Definition to Pipeline script.
+3)Paste your pipeline script (Jenkinsfile) that utilizes Docker Compose.
+4) Build pipeline.
