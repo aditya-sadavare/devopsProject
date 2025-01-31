@@ -25,7 +25,7 @@ Click the image below to watch the demo video:
 
 ---
 
-## ** "We have stopped our EC2 service because it is a free-tier account, so the site is currently not visible. However, we can start it anytime if needed. Proof of EC2 instance status is attached." **
+"We have stopped our EC2 service because it is a free-tier account, so the site is currently not visible. However, we can start it anytime if needed. Proof of EC2 instance status is attached."
 
 # Run Locally
 
