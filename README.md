@@ -1,6 +1,1 @@
-<!DOCTYPE html>
-<html>
-<body>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/1gmm0ISbwNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</body>
-</html>
+[![Watch the video](https://img.youtube.com/vi/1gmm0ISbwNA/maxresdefault.jpg)](https://www.youtube.com/watch?v=1gmm0ISbwNA)
