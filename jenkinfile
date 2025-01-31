@@ -1,0 +1,42 @@
+pipeline {
+    agent any
+
+    environment {
+        IMAGE_NAME = "node-app"
+        DOCKER_IMAGE = "node-app:latest"
+        REPO_URL = "https://github.com/SwarupKharat/devopsPro111.git"
+        BRANCH_NAME = "main"
+    }
+
+    stages {
+        stage('Checkout Code') {
+            steps {
+                script {
+                    // Checkout the latest changes from the specified branch
+                    git branch: "${BRANCH_NAME}", url: "${REPO_URL}"
+                }
+            }
+        }
+
+        stage('Build and Run with Docker Compose') {
+            steps {
+                script {
+                    // Ensure clean environment by stopping and removing existing containers
+                    sh 'docker-compose down || echo "No existing containers to stop"'
+
+                    // Build and start the containers in detached mode
+                    sh 'docker-compose up -d --build'
+                }
+            }
+        }
+
+        stage('View Application Logs') {
+            steps {
+                script {
+                    // Display logs for the running container
+                    sh 'docker-compose logs'
+                }
+            }
+        }
+    }
+}
